@@ -1460,8 +1460,8 @@ class NuScenesExplorer:
             raise ValueError("Error: Unknown sensor modality!")
 
         ax.axis('off')
-        ax.set_title('{} {labels_type}'.format(
-            sd_record['channel'], labels_type='(predictions)' if lidarseg_preds_bin_path else ''))
+        # ax.set_title('{} {labels_type}'.format(
+        #     sd_record['channel'], labels_type='(predictions)' if lidarseg_preds_bin_path else ''))
         ax.set_aspect('equal')
 
         if out_path is not None:
